@@ -359,7 +359,6 @@ async def _(event):
 ●━━━━━━━━●
     ''')
             except telethon.errors.rpcerrorlist.UsernameInvalidError:
-            except Exception as eee:
                 await sython.send_message(event.chat_id, f'''خطأ مع {username}
     الخطأ :
     {str(eee)}''')
